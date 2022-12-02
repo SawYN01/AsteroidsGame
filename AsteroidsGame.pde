@@ -23,6 +23,9 @@ public void draw() {
   {
     brick.get(i).show();
     brick.get(i).move();
+    float d = dist((float)bob.getX(), (float)bob.getY(), (float)brick.get(i).getX(), (float)brick.get(i).getY());
+    if(d<10)
+      brick.remove(i);
   }
  
 }
