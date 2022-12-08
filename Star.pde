@@ -4,7 +4,8 @@ class Star //note that this class does NOT extend Floater
   public Star() {
     myX = (int)(Math.random()*500);
     myY = (int)(Math.random()*500);
-    myColor = 255;
+    //myColor = 255;
+    myColor = color((int)(Math.random()*30)+222, (int)(Math.random()*30)+210, (int)(Math.random()*20));
   }
   public void show()
   {
